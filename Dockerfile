@@ -1,3 +1,3 @@
 FROM ubuntu:latest
-COPY calculator.sh /app/calculator.sh
+COPY CalculatorMiniproject/App.class /app/Calculator.class
 # CMD sed -i 's/\r$//' /app/calculator.sh
