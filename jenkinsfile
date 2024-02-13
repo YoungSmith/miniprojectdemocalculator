@@ -15,20 +15,13 @@ pipeline {
                 }
             }
         }
-	stage('Test') {
-            steps {
-                script {
-                    // Unit Testing 
-                    sh 'cd CalculatorMiniproject/'
-                    sh 'java -cp .:junit-4.13.2.jar;hamcrest-core-1.3.jar org.junit.runner.JUnitCore CalculatorTest'
-                }
-            }
-        }
+	
         stage('Build Docker Image') {
             steps {
                 script {
                     // Build Docker image
-                    
+                    sh 'cd /CalculatorSpeMiniproject'
+                    sh 'mvn clean package'
                     docker.build("${DOCKER_IMAGE_NAME}", '.')
                 }
             }
