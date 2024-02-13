@@ -20,9 +20,10 @@ pipeline {
             steps {
                 script {
                     // Build Docker image
-                    sh 'cd /CalculatorSpeMiniproject'
-                    sh 'mvn clean package'
-                    docker.build("${DOCKER_IMAGE_NAME}", '.')
+                    dir('/CalculatorSpeMiniproject') {
+                        sh 'mvn clean package'
+                        docker.build("${DOCKER_IMAGE_NAME}", '.')
+                    }
                 }
             }
         }
