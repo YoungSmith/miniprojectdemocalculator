@@ -1,9 +1,9 @@
 package org.example;
 import java.lang.Math;
 public class Calculator {
-    public static int add(int a,int b){
-        return a+b;
-    }
+    // public static int add(int a,int b){
+    //     return a+b;
+    // }
     public static double sqRoot(double x){
         if (x < 0) {
             throw new IllegalArgumentException("Square root of a negative number is undefined");

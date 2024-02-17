@@ -14,7 +14,7 @@ public class App
         int a,b;
         Scanner sc = new Scanner(System.in);
         while(ch!=6){
-            System.out.println("Press 1 to Calculate Square Root\nPress 2 to Calculate Factorial\nPress 3 to Calculate Natural Log\nPress 4 to Calculate Power\nPress 5 to Calculate Addition\nPress 6 to Exit");
+            System.out.println("Press 1 to Calculate Square Root\nPress 2 to Calculate Factorial\nPress 3 to Calculate Natural Log\nPress 4 to Calculate Power\nPress 5 to Exit");
             ch = sc.nextInt();
             switch (ch){
                 case 1:
@@ -43,15 +43,15 @@ public class App
                     System.out.println(Calculator.power(a,b));
                     sc.nextLine();
                     break;
+                // case 5:
+                //     System.out.println("Enter 1st Number");
+                //     a = sc.nextInt();
+                //     System.out.println("Enter 2nd Number");
+                //     b = sc.nextInt();
+                //     System.out.println(Calculator.add(a,b));
+                //     sc.nextLine();
+                //     break;
                 case 5:
-                    System.out.println("Enter 1st Number");
-                    a = sc.nextInt();
-                    System.out.println("Enter 2nd Number");
-                    b = sc.nextInt();
-                    System.out.println(Calculator.add(a,b));
-                    sc.nextLine();
-                    break;
-                case 6:
                     break;
                 default:
                     System.out.println("Incorrect Input Try Again");
