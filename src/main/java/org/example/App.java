@@ -13,7 +13,7 @@ public class App
         int ch  = 0;
         int a,b;
         Scanner sc = new Scanner(System.in);
-        while(ch!=6){
+        while(ch!=5){
             System.out.println("Press 1 to Calculate Square Root\nPress 2 to Calculate Factorial\nPress 3 to Calculate Natural Log\nPress 4 to Calculate Power\nPress 5 to Exit");
             ch = sc.nextInt();
             switch (ch){
